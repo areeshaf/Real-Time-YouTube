@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hp.youtubeapp.MainActivity">
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/youTubePlayerView"></com.google.android.youtube.player.YouTubePlayerView>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:id="@+id/editText"
+        android:text="Video here"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="83dp"
+        android:layout_marginEnd="83dp"
+        android:id="@+id/textView"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <Button
+        android:text="play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/button"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorAccent"
+        android:textColor="#FFF"/>
+
+    <Button
+        android:text="submit"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:onClick="click"/>
+</RelativeLayout>
